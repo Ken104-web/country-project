@@ -46,3 +46,14 @@ input[type="submit"] {
   height: 35px;
   width: 20%;
 }
+.world{
+  position:absolute;
+  text-align: center;
+  top: 50%;
+  left:20%;
+  font-size: 120%;
+  border-radius: 0.62em;
+  width: 60%;
+  box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+  background-color: rgba(17, 148, 39, 0.25);;
+}

@@ -1,8 +1,10 @@
-// waiting for the DOM to load
-document.addEventListener('DOMContentLoaded', function(){
-    const form = document.querySelector('form');
-    let  nationText = document.querySelector('#nation-text');
-    let  countryList = document.querySelector('#country-list');
+document.addEventListener('DOMContentLoaded', () => {
 
-
+  document.querySelector('form').addEventListener('submit', (e) => {
+      e.preventDefault()
+      let nation = e.target.nationText.value
+     
+      e.target.reset()
+      listCountry(nation)
+  })
 });
