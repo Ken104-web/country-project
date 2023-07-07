@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#countrylist').addEventListener('click', (e) => {
     if(e.target.matches('.details')) {
       handleCountryClick(e.target);
+      
+    } else {
+      console.log('Sorry, wrong input');
     }
-
+    
   });
    // Sends a GET request to the REST API to get the list data
    function listCountry(nation){
@@ -47,7 +50,10 @@ function showCountries(data){
   })
  
 }
-
+function handleCountryClick(countryElement) {
+  // Perform some action when a country is clicked
+  console.log('Country clicked:', countryElement.textContent);
+}
 
   })
 
