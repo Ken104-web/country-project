@@ -6,5 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
      
       e.target.reset()
       listCountry(nation)
-  })
+  
+  document.querySelector('#countrylist').addEventListener('click', (e) => {
+    if(e.target.matches('.details')) {
+      handleCountryClick(e.target);
+    }
+  });
+  
+    })
+
 });
