@@ -46,3 +46,6 @@ This application utilizes the REST Countries API (https://restcountries.com) to 
 
 This project is licensed under the MIT License.
 
+# Author
+
+Kenneth warui
