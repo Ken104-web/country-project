@@ -28,8 +28,27 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.json())
     .then(data => showCountries(data))
 }
-  
+function showCountries(data){
+  let showListHTML = '';
 
-    })
+  // Clear the contents of the country list
+  document.querySelector('#countrylist').innerHTML = '';
+
+  data.forEach(country => {
+      let list = document.createElement('div')
+      list.className = 'details'
+      list.innerHTML = `<h2>Name: ${country.name.common}</h2>
+      <p>Independence status: ${country.independent}</p>
+      <p>Capital: ${country.capital}</p>
+      <p>Continent: ${country.continents}</p>
+      <p> Flag: ${country.flag}</p>
+      `
+      document.querySelector('#countrylist').appendChild(list)
+  })
+ 
+}
+
+
+  })
 
 });
