@@ -20,7 +20,7 @@ To use this application, you will need:
 
 2. Enter the name of a country in the input field.
 
-3. Press the "Submit" button or hit the Enter key to initiate the search.
+3. Press the Enter key to initiate the search.
 
 4. The application will retrieve data from the REST Countries API and display the country details, including name, independence status, capital, continent, and flag.
 
